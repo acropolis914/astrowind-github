@@ -1,0 +1,59 @@
+---
+import { SITE } from '~/config.mjs';
+import Layout from '~/layouts/PageLayout.astro';
+
+import Hero2 from '~/components/widgets/Hero.astro';
+import TitleAnim from '~/components/widgets/TitleAnimation.astro';
+import Note from '~/components/widgets/Note.astro';
+import Features from '~/components/widgets/Features.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import Steps from '~/components/widgets/Steps.astro';
+import Content from '~/components/widgets/Content.astro';
+import LatestPosts from '~/components/blog/LatestPosts.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
+import Stats from '~/components/widgets/Stats.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+
+const meta = {
+  title: SITE.title,
+  description: SITE.description,
+  dontUseTitleTemplate: true,
+};
+---
+
+<Layout {meta}>
+
+
+  <Hero2
+    callToAction={{ text: 'Read my Blogs', href: 'blog', icon: 'tabler:books' }}
+    callToAction2={{ text: 'About me', href: 'about' }}
+    image={{ src: import('~/assets/images/hero.png'), alt: 'AstroWind Hero Image' }}
+  >
+    <Fragment slot="title">
+      <TitleAnim/>
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      <span class="sm:scale-100 scale-100 flex flex-wrap justify-center">
+        <span class="font-semibold">This is my blogsite site. </span>
+        <span>I write just about anything I can think of.</span>
+        <!-- <span class="font-normal text-sm line-break">(Currently just about my teaching tho.)</span> -->
+      </span>
+    </Fragment>
+  </Hero2>
+
+
+
+
+  <!-- <Note /> -->
+
+  <!-- <div id='latest'></div>
+  <LatestPosts
+  title="Find out more content in our Blog"
+  postIds={[
+''
+  ]} 
+/> -->
+</Layout>
+
+

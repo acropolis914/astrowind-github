@@ -1,0 +1,43 @@
+<div id="typewriter" class="h-28"></div>
+<script is:inline src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+<script is:inline type='text/javascript'>
+  const typewriter = new Typewriter('#typewriter', {
+    loop: true,
+  });
+
+  typewriter.typeString('I am Paul Harvey.<br>')
+    .pauseFor(1000)
+    .typeString('A learner.')
+    .pauseFor(1000)
+    .deleteChars(8)
+    .typeString('dreamer.')
+    .pauseFor(1000)
+    .deleteChars(8)
+    .typeString('<span class="text-teal-300"> future educator!</span>')
+    .pauseFor(2500)
+    .start();
+</script>
+
+
+    <!-- <Fragment slot="title">
+      <div id="typewriter" class="h-28"></div>
+      <script is:inline src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+      <script is:inline type='text/javascript'>
+        const typewriter = new Typewriter('#typewriter', {
+          loop: true,
+        });
+    
+        typewriter.typeString('Hi Janna uwu.<br>')
+          .pauseFor(1000)
+          .typeString('I love you.')
+          .pauseFor(1000)
+          .deleteChars(9)
+          .pauseFor(500)
+          .typeString('miss you.')
+          .pauseFor(1000)
+          .deleteChars(11)
+          .typeString('<span class="text-teal-300"> UwU</span>')
+          .pauseFor(2500)
+          .start();
+      </script>
+    </Fragment> -->

@@ -1,0 +1,118 @@
+---
+import { SITE } from '~/config.mjs';
+import Layout from '~/layouts/PageLayout.astro';
+
+import Hero2 from '~/components/widgets/Hero2.astro';
+import Note from '~/components/widgets/Note.astro';
+import Features from '~/components/widgets/Features.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import Steps from '~/components/widgets/Steps.astro';
+import Content from '~/components/widgets/Content.astro';
+import LatestPosts from '~/components/blog/LatestPosts.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
+import Stats from '~/components/widgets/Stats.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+
+const meta = {
+  title: SITE.title,
+  description: SITE.description,
+  dontUseTitleTemplate: false,
+};
+---
+
+<Layout {meta}>
+ <body class="dark:text-white">
+        <div class="mt-6 max-w-screen-lg md:flex mx-auto">
+          <div class="md:w-1/3 mx-5 p-2 relative">
+            <div class="md:fixed">
+              <div class="md:block">
+                <img
+                  class="h-32 w-32 rounded-full mx-auto"
+                  src="/images/pol.png"
+                />
+                <div class="mb-12 text-center mt-4 justify-center items-center">
+                  <h1 class="text-2xl text-gray-800 dark:text-white font-bold">
+                    Paul Harvey C. Suarnaba
+                  </h1>
+                  <div class="md:text-lg text-gray-600">Student Intern</div>
+                  <div class="text-gray-600 md:hidden mt-1">
+                    (paulharvey041901@gmail.com)
+                  </div>
+                </div>
+              </div>
+              <div class="mx-4 my-4 hidden md:block">
+                <div class="my-5 text-lg text-gray-600 flex ">
+                  <div class=" mr-2 inline-block fa-solid fa-envelope mx-1" />phcadano041901@gmail.com
+                </div>
+                <div class="my-5 text-lg text-gray-600 flex">
+                  <div class="mr-2">
+                    <div class="inline-block fa-solid fa-location mx-1" />
+                  </div>
+                  Nueva Vizcaya
+                </div>
+              </div>
+              <div class="btn md:block bg-blue-600 hover:bg-blue-500 focus:outline-none focus:border-blue-700 focus:shadow-outline-blue active:bg-blue-700 transition duration-150 ease-in-out w-full py-2 text-white ">
+                <a
+                  href="mailto:paulharvey041901@gmail.com"
+                  class="inline-flex items-center justify-center "
+                >
+                  Mail
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="md:w-2/3 p-2 w-full">
+            <div class="mx-4 mb-6">
+              <h1 class="mb-4 text-4xl text-gray-700 font-bold dark:text-gray-300">Summary</h1>
+              <p class="text-lg">
+                Insert spiel here omg
+              </p>
+            </div>
+            <div class="mx-4">
+              <h1 class="mb-4 text-4xl text-gray-700 font-bold dark:text-gray-300">Experiences</h1>
+              <ul class="indent-5">
+                <li class="mb-4">
+                  <h2 class="text-2xl font-medium text-gray-800 dark:text-white">
+                    Professional Food Connoiseur
+                  </h2>
+                  <div class="mt-1">
+                    <div>
+                      <i class="bx bx-buildings" style="color: #666"></i>
+                      <small class="text-base text-gray-800 dark:text-white">
+                        Fishbolan sa Kalsada
+                      </small>
+                    </div>
+                    <div>
+                      <i class="bx bx-calendar text-sm" style="color: #666"></i>
+                      <small class="text-sm text-gray-600">Jan 2021 - Present                 </small>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="mx-4">
+              <h1 class="mb-4 text-4xl text-gray-700 font-bold dark:text-gray-300">Skill</h1>
+              <ul>
+                <li class="mb-6 flex flex-wrap">
+                  <span class="achievements">Flask</span>
+                  <span class="achievements">UwU</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </body>
+  
+  
+    <!-- <Note /> -->
+  
+    <!-- <div id='latest'></div>
+    <LatestPosts
+    title="Find out more content in our Blog"
+    postIds={[
+  ''
+    ]} 
+  /> -->
+  </Layout>
+  
