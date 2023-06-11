@@ -3,8 +3,8 @@ import defaultImage from './assets/images/default.png';
 const CONFIG = {
   name: 'Paul\'s Blog',
 
-  origin: 'https://paulharveys.netlify.app',
-  basePathname: '/',
+  origin: 'https://acropolis914.github.io',
+  basePathname: '/astrowind-github',
   trailingSlash: false,
 
   title: 'Hi, It\'s me, Paul Harvey',
