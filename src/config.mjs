@@ -4,7 +4,7 @@ const CONFIG = {
   name: 'Paul\'s Blog',
 
   origin: 'https://acropolis914.github.io',
-  basePathname: '/astrowind-github',
+  basePathname: 'astrowind-github',
   trailingSlash: false,
 
   title: 'Hi, It\'s me, Paul Harvey',
