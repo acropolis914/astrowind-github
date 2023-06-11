@@ -20,7 +20,7 @@ const whenExternalScripts = (items = []) =>
 
 export default defineConfig({
   site: acropolis914.github.io,
-  base: /astrowwind-github,
+  base: astrowwind-github,
   trailingSlash: SITE.trailingSlash ? 'always' : 'never',
 
   output: 'static',
